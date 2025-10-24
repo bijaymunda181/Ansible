@@ -19,13 +19,10 @@ Agentless (only SSH is needed)
 Very easy to learn (YAML-based playbooks)
 
 ## ✅ How Ansible Works (Simple Flow)
-i.You have a Control Node (Ansible server)
-
-ii.You have Managed Nodes (client servers)
-
-iii.Ansible connects to the clients using SSH
-
-iv.It executes tasks using Playbooks (YAML files)
+1. You have a Control Node (Ansible server)
+2. You have Managed Nodes (client servers)
+3. Ansible connects to the clients using SSH
+4. It executes tasks using Playbooks (YAML files)
 
 ✅ Example Ansible Playbook
 Copy code
