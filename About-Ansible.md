@@ -24,7 +24,7 @@ Very easy to learn (YAML-based playbooks)
 3. Ansible connects to the clients using SSH
 4. It executes tasks using Playbooks (YAML files)
 
-✅ Example Ansible Playbook
+## ✅ Example Ansible Playbook
 Copy code
 Yaml
 - name: Install Apache
@@ -36,7 +36,7 @@ Yaml
         state: present
 📌 This playbook will install httpd on all servers in the webservers group.
 
-✅ Where is Ansible Used?
+## ✅ Where is Ansible Used?
 Field
 Usage
 DevOps
