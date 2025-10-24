@@ -10,6 +10,8 @@ Provisioning
 Create servers in cloud (AWS, etc.) automatically
 Orchestration
 Manage multiple servers and their tasks in a sequence
+
+
 ✅ Why do we use Ansible?
 Saves time by automating repeated tasks
 Manage hundreds of servers from a single control machine
