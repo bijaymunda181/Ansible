@@ -11,17 +11,18 @@ Create servers in cloud (AWS, etc.) automatically
 Orchestration
 Manage multiple servers and their tasks in a sequence
 
-
 ✅ Why do we use Ansible?
 Saves time by automating repeated tasks
 Manage hundreds of servers from a single control machine
 Agentless (only SSH is needed)
 Very easy to learn (YAML-based playbooks)
+
 ✅ How Ansible Works (Simple Flow)
 You have a Control Node (Ansible server)
 You have Managed Nodes (client servers)
 Ansible connects to the clients using SSH
 It executes tasks using Playbooks (YAML files)
+
 ✅ Example Ansible Playbook
 Copy code
 Yaml
@@ -33,6 +34,7 @@ Yaml
         name: httpd
         state: present
 📌 This playbook will install httpd on all servers in the webservers group.
+
 ✅ Where is Ansible Used?
 Field
 Usage
@@ -46,6 +48,7 @@ Security
 Patch management
 Application Teams
 Automated deployments
+
 ✅ Summary
 Ansible is a powerful automation tool that helps you configure, manage, and deploy software across many servers easily using simple YAML files — without needing any agent.
 📌 Next Learning Path (If You Want to Continue)
@@ -54,8 +57,3 @@ Ansible is a powerful automation tool that helps you configure, manage, and depl
 ✔ Playbooks
 ✔ Roles
 ✔ Real-time examples (Nginx, Tomcat, AWS modules)
-If you want, I can also prepare a full Ansible Learning GitHub Repository for you with:
-✅ inventory
-✅ playbooks
-✅ roles
-✅ real-time examples
