@@ -1,4 +1,4 @@
-##.✅ What is Ansible?
+## ✅ What is Ansible?
 
 Ansible is an open-source IT automation tool used to automate:
 Purpose
@@ -12,13 +12,13 @@ Create servers in cloud (AWS, etc.) automatically
 Orchestration
 Manage multiple servers and their tasks in a sequence
 
-##.✅ Why do we use Ansible?
+## ✅ Why do we use Ansible?
 Saves time by automating repeated tasks
 Manage hundreds of servers from a single control machine
 Agentless (only SSH is needed)
 Very easy to learn (YAML-based playbooks)
 
-##.✅ How Ansible Works (Simple Flow)
+## ✅ How Ansible Works (Simple Flow)
 You have a Control Node (Ansible server)
 You have Managed Nodes (client servers)
 Ansible connects to the clients using SSH
