@@ -5,11 +5,17 @@ Ansible is an open-source IT automation tool used to automate:
 Purpose
 </br>
 Meaning
+</br>
 Configuration Management
+</br>
 Install packages, update config files, manage services on servers automatically
+</br>
 Application Deployment
+</br>
+
 Deploy applications on many servers at once
 Provisioning
+
 Create servers in cloud (AWS, etc.) automatically
 Orchestration
 Manage multiple servers and their tasks in a sequence
