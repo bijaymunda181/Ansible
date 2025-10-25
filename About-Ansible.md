@@ -1,7 +1,7 @@
 ## ✅ What is Ansible?
 
 Ansible is an open-source IT automation tool used to automate:
-
+</br>
 Purpose
 Meaning
 Configuration Management
