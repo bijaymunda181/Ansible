@@ -4,5 +4,5 @@
     - name: Install Nginx
       ansible.builtin.dnf:
         name: httpd
-         state: latest
+        state: latest
 
