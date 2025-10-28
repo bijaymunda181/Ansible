@@ -77,10 +77,13 @@ Default inventory path: /etc/ansible/hosts
 Example inventory file (inventory):
 
 [web]
+<\br>
 192.168.1.10
+<\br>
 192.168.1.20
 
 [db]
+<\br>
 192.168.1.30
 
 
