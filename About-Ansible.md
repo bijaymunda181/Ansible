@@ -100,7 +100,7 @@ You can run a command on the group like:
 ansible web -m ping -i inventory
 
 ## ✅ 2. What is a Module in Ansible?
-https://docs.ansible.com/ #from here you got the module
+https://docs.ansible.com/ansible/latest/collections/index.html #From here you get the modules
 
 A module is a function that performs a particular task on a server.
 
