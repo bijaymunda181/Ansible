@@ -74,7 +74,7 @@ Inventory is a file where we store target server details (hosts).
 
 Default inventory path: /etc/ansible/hosts
 
-"Example inventory file (inventory)":
+Example inventory file (inventory):
 
 [web]
 </br>
