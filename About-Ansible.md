@@ -66,3 +66,91 @@ Ansible is a powerful automation tool that helps you configure, manage, and depl
 ✔ Playbooks
 ✔ Roles
 ✔ Real-time examples (Nginx, Tomcat, AWS modules)
+
+
+## ✅ 1. What is Inventory in Ansible?
+
+Inventory is a file where we store target server details (hosts).
+
+Default inventory path: /etc/ansible/hosts
+
+Example inventory file (inventory):
+
+[web]
+192.168.1.10
+192.168.1.20
+
+[db]
+192.168.1.30
+
+
+Meaning:
+
+We created two groups: web and db
+
+Each group contains server IPs or hostnames
+
+Ansible will run tasks on these servers
+
+You can run a command on the group like:
+
+ansible web -m ping -i inventory
+
+## ✅ 2. What is a Module in Ansible?
+
+A module is a function that performs a particular task on a server.
+
+Example:
+
+ping → check connection
+
+yum / dnf → install package
+
+service → start/stop services
+
+copy → copy files
+
+user → create user
+
+Ad-hoc command with a module:
+
+ansible web -m yum -a "name=httpd state=present" -i inventory
+
+
+Meaning:
+
+Install httpd on all servers in web group
+
+## ✅ 3. What is a Playbook in Ansible?
+
+A Playbook is a YAML file where we write multiple tasks (using modules) step-by-step for automation.
+
+Example playbook (apache.yml):
+
+---
+- name: Install and start Apache
+  hosts: web
+  become: yes
+
+  tasks:
+  - name: Install httpd package
+    yum:
+    name: httpd
+    state: present
+
+  - name: Start httpd service
+    service:
+    name: httpd
+    state: started
+    enabled: yes
+
+
+Run this playbook:
+
+ansible-playbook apache.yml -i inventory
+
+## ✅ SUMMARY (in one line)
+Component	Purpose
+Inventory	Where your servers are defined
+Module	What action to perform (install, copy, start service, etc.)
+Playbook	A script that contains multiple tasks using modules
