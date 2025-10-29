@@ -9,6 +9,7 @@
 # Ansible access variable with two flower brackets
 
 - name: variable
+  hosts: App
   vars:
     URL: bijay.com
   tasks:
