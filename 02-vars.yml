@@ -11,7 +11,7 @@
 - name: variable
   hosts: App
   vars:
-    URL: bijay.com
+    URL: google.com
   tasks:
     -name: Print variable
     ansible.builtin.debug:
