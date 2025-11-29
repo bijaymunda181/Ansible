@@ -1,10 +1,10 @@
-- name: Installl nginx
-  ansible.builtin.yum:
-    name: httpd
+- name: Install nginx
+  ansible.builtin.dnf:
+    name: nginx
     state: latest
 
 - name: Start Nginx
-  ansible.builtin.systemd:
+  ansible.builtin.dnf:
     name: nginx
     state: started
     enabled: yes
