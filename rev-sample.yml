@@ -12,6 +12,7 @@
         name: nginx
         state: started
         enabled: yes
+
 - name: Install nginx
   hosts: app
   become: true
