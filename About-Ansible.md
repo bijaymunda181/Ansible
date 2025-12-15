@@ -33,7 +33,7 @@ Very easy to learn (YAML-based playbooks)
 4. It executes tasks using Playbooks (YAML files)
 
 ## ✅ Example Ansible Playbook
-Copy code
+
 Yaml
 - name: Install Apache
   hosts: webservers
