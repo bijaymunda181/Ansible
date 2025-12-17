@@ -6,12 +6,12 @@
       - orange
       - apple
   tasks:
-    - name: print Fruit
+    - name: Print Fruit
       ansible.builtin.debug:
-        msg: Fruit name - "{{ item }}"
+        msg: Fruit Name - "{{ item }}"
         loop: "{{ fruits }}"
 
-    - name: Print fruit local value
+    - name: Print Fruit Local value
       ansible.builtin.debug:
         msg: Fruit Name - "{{ item }}"
       loop:
