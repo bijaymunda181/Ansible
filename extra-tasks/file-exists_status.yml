@@ -1,0 +1,19 @@
+- name: File check
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: File Exists Check
+      stat:
+        path: /tem/file1
+      register: file1
+
+    - name: Print result
+      debug:
+        msg: "File exists"
+      when: file1.stat.exists
+
+    - name: Install Nginx
+      ansible.builtin.dnf:
+        name: nginx
+        state: installed
+      when: ansible_os_family == "centos"

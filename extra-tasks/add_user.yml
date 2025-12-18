@@ -1,0 +1,4 @@
+- name: Add User Bijay
+  ansible.builtin.user:
+    name: bijay
+    create_home: yes
