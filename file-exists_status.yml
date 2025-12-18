@@ -1,4 +1,8 @@
-- name: File Exists Check
-  stat:
-    path: /tem/file1
-  register: file1
+- name: File check
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: File Exists Check
+      stat:
+        path: /tem/file1
+      register: file1
