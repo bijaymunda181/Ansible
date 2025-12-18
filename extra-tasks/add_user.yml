@@ -1,4 +1,8 @@
-- name: Add User Bijay
-  ansible.builtin.user:
-    name: bijay
-    create_home: yes
+- name: Add User
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Add User Bijay
+      ansible.builtin.user:
+        name: bijay
+        create_home: yes
