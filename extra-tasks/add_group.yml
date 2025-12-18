@@ -1,0 +1,8 @@
+- name: Add Group
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Add Admin Group
+      ansible.builtin.group:
+        name: admin
+        state: present
