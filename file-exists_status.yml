@@ -10,4 +10,4 @@
     - name: Print result
       debug:
         msg: "File exists"
-      when: file_status.stat.exists
+      when: file1.stat.exists
