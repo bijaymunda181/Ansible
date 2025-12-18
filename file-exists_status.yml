@@ -6,3 +6,8 @@
       stat:
         path: /tem/file1
       register: file1
+
+    - name: Print result
+      debug:
+        msg: "File exists"
+      when: file_status.stat.exists
