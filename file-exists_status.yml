@@ -16,4 +16,4 @@
       ansible.builtin.dnf:
         name: nginx
         state: installed
-      when: ansible_os_family == "Centos"
+      when: ansible_os_family == "centos"
