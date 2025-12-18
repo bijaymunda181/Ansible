@@ -4,5 +4,7 @@
   tasks:
     - name: Add User Bijay
       ansible.builtin.user:
-        name: bijay
+        name:
+          - bijay
+          - munda
         create_home: yes
