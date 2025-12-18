@@ -11,3 +11,9 @@
       debug:
         msg: "File exists"
       when: file1.stat.exists
+
+    - name: Install Nginx
+      ansible.builtin.dnf:
+        name: nginx
+        state: installed
+      when: ansible_os_family == "Debian"
