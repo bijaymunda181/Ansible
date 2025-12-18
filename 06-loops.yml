@@ -2,7 +2,7 @@
   hosts: localhost
   connection: local
   vars:
-    fruit:
+    fruits:
       - orange
       - apple
 
