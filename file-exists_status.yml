@@ -1,4 +1,4 @@
 - name: File Exists Check
-  state:
+  stat:
     path: /tem/file1
   register: file1
