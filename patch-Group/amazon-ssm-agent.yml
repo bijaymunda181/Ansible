@@ -1,0 +1,12 @@
+- name: install SSM-Agent
+  hosts: dev
+  become: true
+  tasks:
+    - name: Install SSM-Manager Agent
+      ansible.builtin.shell: yum install -y https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/linux_amd64/amazon-ssm-agent.rpm
+
+    - name: Restart the service
+      ansible.builtin.systemd_system:
+        name: amazon-ssm-agent
+        state: restarted
+        enabled: yes
